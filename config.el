@@ -70,3 +70,7 @@
 (evil-ex-define-cmd "wq" 'liu233w/ex-save-kill-buffer-and-close)
 
 (remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
+
+(setq ivy-use-virtual-buffers nil)
+(with-eval-after-load 'recentf
+  (setq ivy-use-virtual-buffers nil))
