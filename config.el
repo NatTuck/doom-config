@@ -74,3 +74,14 @@
 (setq ivy-use-virtual-buffers nil)
 (with-eval-after-load 'recentf
   (setq ivy-use-virtual-buffers nil))
+
+(defun my-web-mode-hook ()
+  "Fix web mode nonsense"
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-enable-auto-expanding nil)
+  (setq web-mode-enable-auto-quoting nil)
+  (setq web-mode-enable-auto-closing nil)
+  (setq web-mode-enable-auto-pairing nil))
+(add-hook 'web-mode-hook  'my-web-mode-hook)
