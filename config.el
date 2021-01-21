@@ -83,5 +83,13 @@
   (setq web-mode-enable-auto-expanding nil)
   (setq web-mode-enable-auto-quoting nil)
   (setq web-mode-enable-auto-closing nil)
+  (setq web-mode-enable-auto-opening nil)
+  (setq web-mode-disable-auto-pairing t)
   (setq web-mode-enable-auto-pairing nil))
 (add-hook 'web-mode-hook  'my-web-mode-hook)
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
+(with-eval-after-load 'rjsx-mode
+  (define-key rjsx-mode-map "<" nil)
+  (define-key rjsx-mode-map (kbd "C-d") nil)
+  (define-key rjsx-mode-map ">" nil))
