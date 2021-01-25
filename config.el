@@ -93,3 +93,7 @@
   (define-key rjsx-mode-map "<" nil)
   (define-key rjsx-mode-map (kbd "C-d") nil)
   (define-key rjsx-mode-map ">" nil))
+
+(defun disable-flycheck-in-mode ()
+  (flycheck-mode -1))
+(add-hook 'c-mode-common-hook 'disable-flycheck-in-mode)
