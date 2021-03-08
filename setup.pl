@@ -13,3 +13,5 @@ unless (-e $edir) {
 
 system("$edir/bin/doom up");
 system("$edir/bin/doom sync");
+
+system("rustup component add rls");
