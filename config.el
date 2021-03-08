@@ -88,12 +88,19 @@
   (setq web-mode-enable-auto-pairing nil))
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
+(defun my-markdown-mode-hook ()
+  "Die math die"
+  (setq markdown-enable-math nil))
+(add-hook 'markdown-mode-hook  'my-markdown-mode-hook)
+
 (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
 (with-eval-after-load 'rjsx-mode
   (define-key rjsx-mode-map "<" nil)
   (define-key rjsx-mode-map (kbd "C-d") nil)
   (define-key rjsx-mode-map ">" nil))
 
+;(setq-default flycheck-disabled-checkers '(c/c++-clang))
 (defun disable-flycheck-in-mode ()
   (flycheck-mode -1))
 (add-hook 'c-mode-common-hook 'disable-flycheck-in-mode)
+

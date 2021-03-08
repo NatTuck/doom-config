@@ -1,0 +1,7 @@
+// This goes in .eslintrc in the same directory as any package.json
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "no-unused-vars": ["warn", { "varsIgnorePattern": "^_" }]
+    }
+}
