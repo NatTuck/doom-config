@@ -182,3 +182,5 @@
        :config
        ;;literate
        (default +bindings +smartparens))
+
+(defun sp-point-in-string-or-comment nil)
