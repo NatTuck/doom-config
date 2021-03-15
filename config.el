@@ -90,6 +90,7 @@
 
 (defun my-markdown-mode-hook ()
   "Die math die"
+  (setq markdown-gfm-use-electric-backquote nil) 
   (setq markdown-enable-math nil))
 (add-hook 'markdown-mode-hook  'my-markdown-mode-hook)
 
