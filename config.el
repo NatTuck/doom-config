@@ -91,6 +91,7 @@
 (defun my-js2-mode-hook ()
   (setq js2-basic-offset 2)
   (setq js-basic-offset 2)
+  (setq js-switch-indent-offset 0)
   (setq js-indent-offset 0))
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 
