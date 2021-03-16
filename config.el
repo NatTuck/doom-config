@@ -89,7 +89,9 @@
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 (defun my-js2-mode-hook ()
-  (setq js2-basic-offset 2))
+  (setq js2-basic-offset 2)
+  (setq js-basic-offset 2)
+  (setq js-indent-offset 0))
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 
 (defun my-markdown-mode-hook ()
