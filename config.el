@@ -69,6 +69,8 @@
 (evil-ex-define-cmd "q[uit]" 'liu233w/ex-kill-buffer-and-close)
 (evil-ex-define-cmd "wq" 'liu233w/ex-save-kill-buffer-and-close)
 
+(setq +default-want-RET-continue-comments nil)
+
 (remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
 
 (setq ivy-use-virtual-buffers nil)
