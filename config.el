@@ -114,3 +114,7 @@
   (flycheck-mode -1))
 (add-hook 'c-mode-common-hook 'disable-flycheck-in-mode)
 
+;; LSP mode stuff, mostly for rust
+;;   https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
+(setq lsp-ui-doc-enable nil)
+(setq lsp-enable-symbol-highlighting nil)
