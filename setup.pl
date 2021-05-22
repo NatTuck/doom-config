@@ -6,7 +6,7 @@ my $edir = `readlink -m ~/.emacs.d`;
 chomp $edir;
 unless (-e $edir) {
     system("git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d");
-    system("sudo apt install emacs build-essential git shellcheck silversearcher-ag ripgrep fd-find");
+    system("sudo apt install build-essential git shellcheck silversearcher-ag ripgrep fd-find");
     system("sudo apt install jq");
     system("$edir/bin/doom install");
 }
