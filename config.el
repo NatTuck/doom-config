@@ -118,3 +118,4 @@
 ;;   https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
 (setq lsp-ui-doc-enable nil)
 (setq lsp-enable-symbol-highlighting nil)
+(setq lsp-signature-auto-activate nil)
