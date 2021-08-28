@@ -27,6 +27,8 @@
           doom-unicode-font (font-spec :family "DejaVu Sans Mono")
           doom-big-font (font-spec :family "Hack" :size 26)))
 
+(setq ispell-dictionary "en")
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Sync/Documents/org/")
@@ -119,3 +121,5 @@
 (setq lsp-ui-doc-enable nil)
 (setq lsp-enable-symbol-highlighting nil)
 (setq lsp-signature-auto-activate nil)
+;(setq lsp-completion-provider :none)
+(setq lsp-completion-enable nil)
