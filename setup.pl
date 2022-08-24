@@ -7,7 +7,7 @@ chomp $edir;
 unless (-e $edir) {
     system("git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d");
     system("sudo apt install build-essential git shellcheck silversearcher-ag ripgrep fd-find");
-    system("sudo apt install jq");
+    system("sudo apt install jq aspell");
     system("$edir/bin/doom install");
 }
 
